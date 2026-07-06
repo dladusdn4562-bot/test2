@@ -1,3 +1,4 @@
+
 .top-bar {
     padding: 16px 50px;
     display: flex;
@@ -7,19 +8,25 @@
     position: relative;
 }
 .logo-box {
-    display: flex;
-    gap: 10px;
-    width: 350px;
+    display: flex; align-items: center;
+    width: 172px;
 }
 .logo-box img {
-    width: 200px;
+    /* width: 200px; */
+    width: 100%;
+}
+.menu01 { 
+    height: 100%; width: 388px;
 }
 .menu01-ul {
     display: flex;
-    gap: 60px;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
-.mn01-item > a{
-    font-size: 15px;
+.mn01-item {
+    font-size: 11px;
     font-weight: 600;
 }
 .mn01-item:hover > a {
@@ -27,13 +34,12 @@
 }
 .menu02 {
     border-top: 1px solid rgba(0, 0, 0, 0);
-    font-size: 50px;
-    height: 0px; width: 100%;
+    height: 0; 
     position: absolute;
     left: 0; right: 0; top: 100%;
     transition: 0.5s;
     display: flex; justify-content: center;
-    
+    overflow: hidden;
 }
 .menu01:hover > .menu02 {
     height: 400px;
@@ -83,11 +89,8 @@
 .mn03-nav{
     position: absolute;
     left: 0; right: 0; top: calc(100% + 20px);
-    display: flex; justify-content: space-between;
+    justify-content: space-between;
     display: none;
-}
-.mn02-item:hover>.mn03-nav {
-    display: flex;
 }
 .mn03-item >a{
     font-size: 24px;
@@ -99,15 +102,12 @@
     color: #161616;
     text-decoration: underline;
 }
-.mn02-item:hover>.mn03-item {
-    display: flex;
-}
 .user-box {
-    width: 350px;
+    width: 388px;
 }
 .user-box>ul {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     align-items: center;
     justify-content: end;
 }
@@ -115,15 +115,17 @@
     font-size: 20px;
     font-weight: 700;
 }
-.user-btn {
-    border: 1px solid #333;
-    border-radius: 15px;
-    padding: 5px 10px;
+.user-item02 > a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    transition: 0.5S;
+    border: 1px solid #000;
+    border-radius: 20px;
     text-align: center;
-    transition: 0.5s;
-    font-weight: 600;
+    padding: 5px 8px;
 }
-.user-btn:hover {
+.user-item02>a:hover {
     color: #ffffff;
     background-color: #385094;
 }
