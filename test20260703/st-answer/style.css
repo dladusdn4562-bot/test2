@@ -1,35 +1,57 @@
-header {border: 1px solid red;}
 .top-bar {
-    border: 1px solid orange;
     display: flex;
     padding-left: 100px; padding-right: 100px;
     justify-content: space-between;
     height: 116px;
-
+    background: linear-gradient(90deg , #f7f7f7 0%, #9fc5df 62% , #82add0 100%);
+}
+.top-bar:hover {
+    background: linear-gradient(90deg, #5d98c9 0%, #2a73af 50% , #0a518b 100%);
 }
 .logo-box {
-    border: 1px solid green;
     align-self: center;
 }
 .logo-box img {
     width: 220px;
 }
-.menu01 {
-    border: 1px solid blue;
-}
 .menu01>ul {
-    display: flex;
+    display: flex; gap: 50px;
     height: 100%;
     align-items: center;
 }
+.m01-item:hover {
+    text-decoration: underline;
+}
+.m01-item a {
+    font-size: 15px; font-weight: 500;
+    color: #333;
+}
 .user-box {
-    border: 1px solid purple;
     align-self: center;
 }
 .user-box>ul {
-    display: flex;
-    /* width: 220px; */
+    display: flex; align-items: center;
+    gap: 16px;
 }
-.user-item03>a {
-    display: flex;
+.user-item01 a {
+    font-size: 27px;
+    font-weight: 700;
 }
+.user-item02{
+    border: 1px solid #333;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.user-item02:hover {
+    background-color: #ffffff;
+    border: 1px solid sandybrown;
+    color: rgb(255, 255, 255);
+}
+.user-item02 a {
+    font-size: 15px;
+}
+.user-item03 a {
+    display: flex; align-items: center;
+    font-size: 15px;
+}   
